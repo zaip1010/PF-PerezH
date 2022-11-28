@@ -386,6 +386,7 @@ header ul li {
 }
 
 .btn {
+    padding: 20px;
     box-shadow:inset 0px 1px 0px 0px #54a3f7;
 	background:linear-gradient(to bottom, #1746A2 5%, #0061a7 100%);
 	background-color:#1746A2;
