@@ -375,7 +375,7 @@ header ul li {
 }
 
 .telas {
-    padding: 40px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -383,11 +383,6 @@ header ul li {
     grid-row-gap: 10px;
     justify-content: space-between;
     text-align: center;
-}
-
-.telalino {
-    border-radius:10px;
-	border:1px solid #124d77;
 }
 
 .btn {
@@ -414,17 +409,17 @@ header ul li {
 	top:1px;
 }
 
-
 .telas h3 {
     color: #FF731D;
 }
 
 .telas img {
-    width: 350px;
+    width: 400px;
     height: 350px;
     margin-left: 10px;
-    border: 1px black;
     object-fit: cover;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /* -------Pagina: Productos Pizarras------- */
