@@ -166,8 +166,9 @@ header ul li {
 .ofertas-del-mes .contenedor1 h3 {
     color: #FF731D;
 }
+
 .ofertas-del-mes span {
-    font-size:  1.2rem;
+    font-size: 1.2rem;
     color: #1746A2;
 }
 
@@ -204,7 +205,7 @@ header ul li {
 }
 
 .lo-mas-vendido span {
-    font-size:  1.2rem;
+    font-size: 1.2rem;
     color: #1746A2;
 }
 
@@ -217,16 +218,17 @@ header ul li {
 }
 
 /* ----Nuestras marcas----- */
-.marcas{
+.marcas {
     background-color: #2e313810;
-} 
+}
 
 .marcas .titulo {
     text-align: center;
-    color:#1746A2;
+    color: #1746A2;
     font-size: 1.8rem;
     padding: 20px;
 }
+
 .contenedor3 {
     padding: 10px;
     display: flex;
@@ -385,42 +387,8 @@ header ul li {
     text-align: center;
 }
 
-.btn {
-    padding: 20px;
-    box-shadow:inset 0px 1px 0px 0px #54a3f7;
-	background:linear-gradient(to bottom, #1746A2 5%, #0061a7 100%);
-	background-color:#1746A2;
-	border-radius:10px;
-	border:1px solid #124d77;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #154682;
-}
-.btn:hover {
-	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
-	background-color:#0061a7;
-}
-.btn:active {
-	position:relative;
-	top:1px;
-}
-
 .telas h3 {
     color: #FF731D;
-}
-
-.telas img {
-    width: 400px;
-    height: 350px;
-    margin-left: 10px;
-    object-fit: cover;
-    border-radius:10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /* -------Pagina: Productos Pizarras------- */
