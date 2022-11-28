@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li :hover {
+    color: #5F9DF7;
+}
+
+
+/* --- Header ---- */
+
+.aviso {
+    text-align: center;
+    background-color: #2e3138;
+    color: #EDEDED;
+    font-size: 1.0rem;
+    padding: 10px;
+}
+
+
+header {
+    background: #1746A2;
+    background-image: linear-gradient(96.5deg, rgba(39, 103, 187, 1) 10.4%, rgba(16, 72, 144, 1) 87.7%);
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header ul li {
+    width: fit-content;
+    display: inline;
+    padding: 25px;
+}
+
+.productos {
+    background-image: url(../img/abajo.png);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #2e313872;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #FF731D;
+}
+
+
+/* --- Portada ---- */
+
+.portada-index {
+    height: 60vh;
+    background-image: url(../img/acuarelas3.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+/* --- Categorías ---- */
+.categorias .titulo {
+    text-align: left;
+    background-color: #1746A2;
+    color: #EDEDED;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+.categorias .contenedor {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1.5fr);
+    column-gap: 10px;
+    row-gap: 25px;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    text-align: center;
+}
+
+.contenedor img {
+    padding: 0px;
+    width: 280px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenedor img:hover {
+    transform: scale(1.2)
+}
+
+/* ---- Ofertas del mes ---- */
+
+.ofertas-del-mes .titulo {
+    text-align: left;
+    background-color: #1746A2;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+.ofertas-del-mes .contenedor1 {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1.5fr);
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    text-align: center;
+}
+
+.ofertas-del-mes .contenedor1 h3 {
+    color: #FF731D;
+}
+.ofertas-del-mes span {
+    font-size:  1.2rem;
+    color: #1746A2;
+}
+
+.contenedor1 img {
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    border: 1px black;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* ---- Lo mas vendido ---- */
+
+.lo-mas-vendido .titulo {
+    text-align: left;
+    background-color: #1746A2;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+.lo-mas-vendido .contenedor2 {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.lo-mas-vendido .contenedor2 h3 {
+    color: #FF731D;
+}
+
+.lo-mas-vendido span {
+    font-size:  1.2rem;
+    color: #1746A2;
+}
+
+.contenedor2 img {
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    border: 1px black;
+    object-fit: cover;
+}
+
+/* ----Nuestras marcas----- */
+.marcas{
+    background-color: #2e313810;
+} 
+
+.marcas .titulo {
+    text-align: center;
+    color:#1746A2;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+.contenedor3 {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.marcas .contenedor3 img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* ---- Footer ---- */
+.footer {
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #2e3138;
+    text-align: left;
+    padding: 25px;
+}
+
+.footer h4 {
+    color: #FF731D;
+    margin-bottom: 5px;
+}
+
+
+/* -------Pagina: Sobre nosotros------- */
+
+.portada-aboutus {
+    height: 30vh;
+    background-image: url(../img/lapicescolor.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+.nuestra-historia h2 {
+    font-size: 2.0rem;
+    padding: 20px;
+    color: #FF731D;
+}
+
+.nuestrahistoria img {
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.nuestra-historia .nuestrahistoria {
+    display: flex;
+}
+
+.nuestrahistoria span {
+    padding: 20px;
+    display: flex;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.aboutus-texto {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: left;
+}
+
+.cotizaciones {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2e3138a4;
+    background-color: #2e31383f;
+}
+
+/* -------Pagina: Contacto----- */
+
+.portada-contacto {
+    height: 40vh;
+    background-image: url(../img/contacto2.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+/* -------Pagina: Productos Atriles------- */
+
+.portada-atriles {
+    height: 40vh;
+    background-image: url(../img/atril2.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atriles-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+
+/* -------Pagina: Productos Telas------- */
+.portada-telas {
+    height: 40vh;
+    background-image: url(../img/bastidor.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telas-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+.telas {
+    padding: 20px;
+    display: grid; 
+    grid-template: auto / auto auto auto;
+    column-gap: 10px;
+    row-gap: 25px;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    text-align: center;
+}
+
+.btn {
+    color: #1746A2;
+}
+
+.telas h3 {
+    color: #FF731D;
+}
+
+.telas img {
+    width: 350px;
+    height: 350px;
+    margin-left: 10px;
+    border: 1px black;
+    object-fit: cover;
+}
+
+/* -------Pagina: Productos Pizarras------- */
+
+.portada-pizarras {
+    height: 40vh;
+    background-image: url(../img/pizarrablanca02.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizarras-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+
+/* -------Pagina: Productos Pinturas------- */
+
+.portada-pinturas {
+    height: 40vh;
+    background-image: url(../img/insumosarte.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinturas-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+
+/* -------Pagina: Productos Pinceles------- */
+
+.portada-pinceles {
+    height: 40vh;
+    background-image: url(../img/pinceles04.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinceles-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+/* -------Pagina: Productos Auxiliares------- */
+
+.portada-auxiliares {
+    height: 40vh;
+    background-image: url(../img/artsupply.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auxiliares-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+/* -------Pagina: Productos Lapiceria------- */
+
+.portada-lapiceria {
+    height: 40vh;
+    background-image: url(../img/plumones.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lapiceria-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+/* -------Pagina: Productos Accesorios------- */
+
+.portada-accesorios {
+    height: 40vh;
+    background-image: url(../img/lapicescolor.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accesorios-titulo {
+    background-color: rgba(129, 142, 185, 0.296);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
