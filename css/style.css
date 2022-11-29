@@ -4,138 +4,56 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-li :hover {
-    color: #5F9DF7;
-}
 
 
 /* --- Header ---- */
-
-.aviso {
-    text-align: center;
-    background-color: #2e3138;
-    color: #EDEDED;
-    font-size: 1.0rem;
-    padding: 10px;
-}
-
-
-header {
-    background: #1746A2;
-    background-image: linear-gradient(96.5deg, rgba(39, 103, 187, 1) 10.4%, rgba(16, 72, 144, 1) 87.7%);
-    color: #FFFFFF;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-header ul li {
-    width: fit-content;
-    display: inline;
+.navbar {
     padding: 25px;
-}
-
-.productos {
-    background-image: url(../img/abajo.png);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    min-width: 160px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    background-color: #2e313872;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #FF731D;
+    color: #ffffff;
+    background-color: #2158b8;
 }
 
 
-/* --- Portada ---- */
-
-.portada-index {
-    height: 60vh;
-    background-image: url(../img/acuarelas3.jpeg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* --- Carrusel ---- */
+.carousel img {
+    height: 500px;
+    object-fit: cover;
 }
 
-.portada-titulo {
-    background-color: rgba(129, 142, 185, 0.296);
+.carousel-caption {
+    background: rgba(45, 45, 45, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(112, 112, 112, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.022);
     font-size: 1.8rem;
     color: white;
     padding: 15px;
 }
 
+.carousel-caption h1 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption h2 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    color: #ffffff;
+}
+
 /* --- Categorías ---- */
+
+.categorias {
+    background-color: rgba(119, 119, 119, 0.296);
+    padding: 20px;
+}
 .categorias .titulo {
-    text-align: left;
-    background-color: #1746A2;
-    color: #EDEDED;
-    font-size: 1.8rem;
-    padding: 20px;
-}
-
-.categorias .contenedor {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1.5fr);
-    column-gap: 10px;
-    row-gap: 25px;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    text-align: center;
-}
-
-.contenedor img {
-    padding: 0px;
-    width: 280px;
-    height: 250px;
-    object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: #FF731D;
 }
 
 .contenedor img:hover {
@@ -143,122 +61,64 @@ header ul li {
 }
 
 /* ---- Ofertas del mes ---- */
-
-.ofertas-del-mes .titulo {
-    text-align: left;
-    background-color: #1746A2;
-    color: #FFFFFF;
-    font-size: 1.8rem;
+.ofertas-del-mes {
+    background-color: rgba(119, 119, 119, 0.296);
     padding: 20px;
 }
-
-.ofertas-del-mes .contenedor1 {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1.5fr);
-    column-gap: 10px;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: center;
-    text-align: center;
-}
-
-.ofertas-del-mes .contenedor1 h3 {
+.ofertas-del-mes .titulo {
     color: #FF731D;
 }
 
-.ofertas-del-mes span {
-    font-size: 1.2rem;
-    color: #1746A2;
+.ofertas-del-mes img {
+    object-fit: contain;
 }
-
-.contenedor1 img {
-    width: 250px;
-    height: 250px;
-    margin-left: 10px;
-    border: 1px black;
-    object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
 /* ---- Lo mas vendido ---- */
 
-.lo-mas-vendido .titulo {
-    text-align: left;
-    background-color: #1746A2;
-    color: #FFFFFF;
-    font-size: 1.8rem;
+.lo-mas-vendido {
+    background-color: rgba(119, 119, 119, 0.296);
     padding: 20px;
 }
-
-.lo-mas-vendido .contenedor2 {
-    padding: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.lo-mas-vendido .contenedor2 h3 {
+.lo-mas-vendido .titulo {
     color: #FF731D;
 }
 
-.lo-mas-vendido span {
-    font-size: 1.2rem;
-    color: #1746A2;
+.card-img-top {
+    height: 15rem;
+    object-fit: contain;
 }
 
-.contenedor2 img {
-    width: 250px;
-    height: 250px;
-    margin-left: 10px;
-    border: 1px black;
-    object-fit: cover;
+.container .card:hover {
+    transform: scale(1.2)
 }
 
 /* ----Nuestras marcas----- */
 .marcas {
-    background-color: #2e313810;
-}
-
-.marcas .titulo {
-    text-align: center;
-    color: #1746A2;
-    font-size: 1.8rem;
+    background-color: rgba(119, 119, 119, 0.296);
     padding: 20px;
 }
-
-.contenedor3 {
-    padding: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
+.marcas .titulo {
+    color: #1a1b5f;
 }
 
-.marcas .contenedor3 img {
+.contenedor3 img {
+    padding: 10px;
+    align-items: center;
+    object-fit: contain;
     height: 150px;
     width: 150px;
-    object-fit: contain;
+
 }
 
 /* ---- Footer ---- */
 .footer {
-    bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    background-color: #2e3138;
-    text-align: left;
-    padding: 25px;
+    padding: 5px;
+    background-color: #2c2f36;
+    color: #ffffff;
 }
 
-.footer h4 {
-    color: #FF731D;
-    margin-bottom: 5px;
+.container .text-center ul li {
+    text-decoration: none;
 }
-
 
 /* -------Pagina: Sobre nosotros------- */
 
@@ -280,6 +140,7 @@ header ul li {
 }
 
 .nuestra-historia h2 {
+    background-color: rgba(129, 142, 185, 0.296);
     font-size: 2.0rem;
     padding: 20px;
     color: #FF731D;
@@ -385,6 +246,37 @@ header ul li {
     grid-row-gap: 10px;
     justify-content: space-between;
     text-align: center;
+    justify-items: center;
+}
+
+.card {
+    width: 22rem;
+}
+
+.btn-outline-primary {
+    box-shadow: 0px 10px 14px -7px #9fb4f2;
+    background: linear-gradient(to bottom, #2158b8 5%, #003270 100%);
+    background-color: #2158b8;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(to bottom, #003270 5%, #2158b8 100%);
+    background-color: #003270;
+}
+
+
+.card-img-top {
+    height: 15rem;
 }
 
 .telas h3 {
