@@ -4,15 +4,35 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 
 
 /* --- Header ---- */
 .navbar {
     padding: 25px;
-    color: #ffffff;
     background-color: #2158b8;
 }
 
+.nav-item a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #FF731D;
+}
+
+.dropdown-menu {
+    background-color: #000000a1;
+}
+
+/* ----Aviso de envios------ */
+.alert {
+    margin: 0%;
+    background-color: #454545;
+    color: #ffffff;
+}
 
 /* --- Carrusel ---- */
 .carousel img {
@@ -56,9 +76,19 @@
     color: #FF731D;
 }
 
-.contenedor img:hover {
-    transform: scale(1.2)
+.figure img {
+    height: 15rem;
+    width: 20rem;
 }
+.figure-caption {
+    color: #003270;
+    font-family: 'Prompt', sans-serif;
+}
+
+.categ:hover {
+    transform: scale(1.1, 1.1)
+}
+
 
 /* ---- Ofertas del mes ---- */
 .ofertas-del-mes {
@@ -67,6 +97,11 @@
 }
 .ofertas-del-mes .titulo {
     color: #FF731D;
+}
+
+.card-title {
+    color: #FF731D;
+    font-weight: bolder;
 }
 
 .ofertas-del-mes img {
@@ -87,44 +122,37 @@
     object-fit: contain;
 }
 
-.container .card:hover {
-    transform: scale(1.2)
+.card {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
-/* ----Nuestras marcas----- */
-.marcas {
-    background-color: rgba(119, 119, 119, 0.296);
-    padding: 20px;
-}
-.marcas .titulo {
-    color: #1a1b5f;
-}
-
-.contenedor3 img {
-    padding: 10px;
-    align-items: center;
-    object-fit: contain;
-    height: 150px;
-    width: 150px;
-
-}
 
 /* ---- Footer ---- */
-.footer {
-    padding: 5px;
+footer {
     background-color: #2c2f36;
     color: #ffffff;
 }
 
-.container .text-center ul li {
-    text-decoration: none;
+footer h5 {
+    font-weight: bold;
+    color: #FF731D;
 }
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+} 
+
+footer a:hover {
+    color: #4d88ac90;
+} 
+
 
 /* -------Pagina: Sobre nosotros------- */
 
 .portada-aboutus {
     height: 30vh;
-    background-image: url(../img/lapicescolor.jpeg);
+    background-image: url(../img/paletapintura.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -133,52 +161,25 @@
 }
 
 .aboutus-titulo {
-    background-color: rgba(129, 142, 185, 0.296);
+    background: rgba(45, 45, 45, 0.35);
     font-size: 1.8rem;
     color: white;
     padding: 15px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
 }
 
-.nuestra-historia h2 {
-    background-color: rgba(129, 142, 185, 0.296);
-    font-size: 2.0rem;
-    padding: 20px;
+.nuestra-historia {
     color: #FF731D;
+    font-weight: bolder;
 }
-
-.nuestrahistoria img {
+.img {
     padding: 20px;
     width: 600px;
     height: 450px;
     object-fit: cover;
 }
 
-.nuestra-historia .nuestrahistoria {
-    display: flex;
-}
-
-.nuestrahistoria span {
-    padding: 20px;
-    display: flex;
-    text-align: justify;
-    font-size: 1.2rem;
-}
-
-.aboutus-texto {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    text-align: left;
-}
-
-.cotizaciones {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #2e3138a4;
-    background-color: #2e31383f;
-}
 
 /* -------Pagina: Contacto----- */
 
