@@ -1,0 +1,30 @@
+.carousel img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(45, 45, 45, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(112, 112, 112, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.022);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption h2 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    color: #ffffff;
+}

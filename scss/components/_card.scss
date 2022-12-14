@@ -1,0 +1,30 @@
+.card {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.tarjeta-producto {
+    border: 0px solid #00000040;
+    border-radius: 0%;
+}
+.tarjeta-producto:hover {
+    transform: translate(7px, -1px);
+}
+
+.card-title {
+    color: #FF731D;
+    font-weight: bolder;
+}
+.card img{
+    width: 250px;
+    height: 250px;
+}
+
+.card-img-top {
+    height: 15rem;
+    object-fit: contain;
+}
+
+.breadcrumb {
+    background-color: rgba(119, 119, 119, 0.296);
+    padding: 20px;
+}

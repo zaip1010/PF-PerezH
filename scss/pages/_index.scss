@@ -1,0 +1,53 @@
+
+
+.alerta {
+    margin: 0%;
+    background-color: #454545;
+    color: #ffffff;
+    border-radius: 0%;
+    border-color: #454545;
+}
+
+.categorias {
+    background-color: rgba(119, 119, 119, 0.296);
+    margin: 25px;
+    padding: 20px;
+}
+
+.categorias .titulo {
+    color: #FF731D;
+}
+
+.figure img {
+    height: 15rem;
+    width: 20rem;
+}
+
+.figure-caption {
+    color: #003270;
+    font-family: 'Prompt', sans-serif;
+}
+
+.categ:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.ofertas-del-mes {
+    background-color: rgba(119, 119, 119, 0.296);
+    margin: 25px;
+    padding: 20px;
+}
+
+.ofertas-del-mes .titulo {
+    color: #FF731D;
+}
+
+.lo-mas-vendido {
+    background-color: rgba(119, 119, 119, 0.296);
+    margin: 25px;
+    padding: 20px;
+}
+
+.lo-mas-vendido .titulo {
+    color: #FF731D;
+}

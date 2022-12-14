@@ -1,0 +1,18 @@
+.portada-pizarras {
+    height: 40vh;
+    background-image: url(../img/pizarrablanca02.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizarras-titulo {
+    background: rgba(45, 45, 45, 0.35);
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
