@@ -8,10 +8,6 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-hr-blurry {
-  backdrop-filter: blur(4px);
-}
-
 a {
   text-decoration: none;
 }
@@ -28,8 +24,7 @@ ul li {
 .nav-item a {
   color: #ffffff;
 }
-
-.nav-item a:hover {
+.nav-item a a:hover {
   color: #FF731D;
 }
 
@@ -54,15 +49,15 @@ ul li {
   color: white;
   padding: 15px;
 }
-.carousel-caption .carousel-caption h1 {
+.carousel-caption h1 {
   font-weight: bold;
   color: #ffffff;
 }
-.carousel-caption .carousel-caption h2 {
+.carousel-caption h2 {
   font-weight: bold;
   color: #ffffff;
 }
-.carousel-caption .carousel-caption p {
+.carousel-caption p {
   color: #ffffff;
 }
 
@@ -90,28 +85,21 @@ ul li {
   border-radius: 0%;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-
 .tarjeta-producto:hover {
   transform: translate(7px, -1px);
 }
-
 .tarjeta-producto img {
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .breadcrumb {
   background-color: #1c4c9f;
   padding: 20px;
 }
-
 .breadcrumb a {
   color: #FF731D;
-}
-
-.breadcrumb-item {
-  color: white;
 }
 
 .btn {
@@ -248,15 +236,15 @@ ul li {
   color: white;
   padding: 15px;
 }
-.carousel-caption .carousel-caption h1 {
+.carousel-caption h1 {
   font-weight: bold;
   color: #ffffff;
 }
-.carousel-caption .carousel-caption h2 {
+.carousel-caption h2 {
   font-weight: bold;
   color: #ffffff;
 }
-.carousel-caption .carousel-caption p {
+.carousel-caption p {
   color: #ffffff;
 }
 
@@ -401,6 +389,10 @@ form {
   border-radius: 10px;
 }
 
+.product-1 h3 {
+  color: aquamarine;
+}
+
 .portada-pinturas {
   height: 40vh;
   background-image: url(../img/insumosarte.jpeg);
@@ -485,14 +477,12 @@ form {
   color: #FF731D;
   font-weight: bolder;
 }
-
-.contacto-text img {
+.contacto-text h2 img {
   width: 500px;
   height: 350px;
   object-fit: cover;
 }
-
-.contacto-text a {
+.contacto-text h2 a {
   color: #FF731D;
   font-weight: bolder;
 }
@@ -505,4 +495,4 @@ form {
   color: #2158b8;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

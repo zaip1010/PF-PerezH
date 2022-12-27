@@ -7,16 +7,16 @@ ul li {
 }
 
 .navbar {
-    padding: 25px;
-    background-color: #2158b8;
+    padding: 25px; 
+    background: linear-gradient(90deg, #0055F1 0%, #242F4C 100%);
 }
 
 .nav-item a {
     color: #ffffff;
-}
 
-.nav-item a:hover {
-    color: #FF731D;
+    & a:hover {
+        color: #FF731D;
+    }
 }
 
 .dropdown-menu {

@@ -77,7 +77,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="10000">
                     <img src="./img/pincelespinturas.jpeg" class="d-block w-100" alt="pincel con pintura">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Insumos y materiales para crear tus obras de arte</h1>
@@ -86,7 +86,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="./img/acuar.jpeg" class="d-block w-100" alt="pinturas a acuarela">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Alcanza tu potencial creativo</h2>
@@ -115,100 +115,83 @@
         </section>
 
         <!-- -------Categorías ------>
-        <section class="categorias">
-            <h2 class="titulo">Categorías</h2>
-        </section>
-
-        <section class="container p-5">
+        <section class="container p-3">
+            <div class="categorias">
+                <h2 class="titulo p-4 text-center fs-1">Explora nuestra categoría de productos</h2>
+            </div>
             <div data-aos="fade-zoom-in">
-                <div class="row gx-5 categories">
-
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="./paginas/atriles.html">
-                            <figure class="figure categ">
-                                <img src="./img/atriles.jpeg" class="figure-img img-fluid rounded-circle" alt="atriles">
-                                <h3>
-                                    <figcaption class="figure-caption text-center">Atriles</figcaption>
-                                </h3>
-                            </figure>
-                        </a>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card sec-categoria">
+                            <a href="./paginas/atriles.html">
+                                <img src="./img/atriles.jpeg" class="w-100" alt="atriles">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-1">Atriles</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="./paginas/telas.html">
-                            <figure class="figure categ">
-                                <img src="./img/bastidor.jpeg" class="figure-img img-fluid rounded-circle"
-                                    alt="telas y lienzos">
-                                <h3>
-                                    <figcaption class="figure-caption text-center">Telas</figcaption>
-                                </h3>
-                            </figure>
-                        </a>
+                    <div class="col">
+                        <div class="card sec-categoria">
+                            <a href="./paginas/telas.html">
+                                <img src="./img/bastidor.jpeg" class="w-100" alt="telas para pintar">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-1">Telas</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="./paginas/pinturas.html">
-                            <figure class="figure categ">
-                                <img src="./img/pinturastubos.jpeg" class="figure-img img-fluid rounded-circle"
-                                    alt="variedad de pinturas">
-                                <h3>
-                                    <figcaption class="figure-caption text-center">Pinturas</figcaption>
-                                </h3>
-                            </figure>
-                        </a>
+                    <div class="col">
+                        <div class="card sec-categoria">
+                            <a href="./paginas/pinturas.html">
+                                <img src="./img/pinturastubos.jpeg" class="w-100" alt="pinturas acrílicas">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-1">Pinturas</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="./paginas/auxiliares.html">
-                            <figure class="figure categ">
-                                <img src="./img/auxiliares.jpeg" class="figure-img img-fluid rounded-circle"
-                                    alt="auxiliares de pinturas">
-                                <h3>
-                                    <figcaption class="figure-caption text-center">Auxiliares</figcaption>
-                                </h3>
-                            </figure>
-                        </a>
+                    <div class="col">
+                        <div class="card sec-categoria">
+                            <a href="./paginas/auxiliares.html">
+                                <img src="./img/auxiliares.jpeg" class="w-100" alt="auxiliares de pintura">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-1">Auxiliares</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="./paginas/pinceles.html">
-                            <figure class="figure categ">
-                                <img src="./img/pincelnegro.jpeg" class="figure-img img-fluid rounded-circle"
-                                    alt="pinceles variados">
-                                <h3>
-                                    <figcaption class="figure-caption text-center">Pinceles</figcaption>
-                                </h3>
-                            </figure>
-                        </a>
+                    <div class="col">
+                        <div class="card sec-categoria">
+                            <a href="./paginas/pinceles.html">
+                                <img src="./img/pincelnegro.jpeg" class="w-100" alt="pinceles variados">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-1">Pinceles</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <a href="./paginas/pizarras.html">
-                            <figure class="figure categ">
-                                <img src="./img/pizarraacrilica.png" class="figure-img img-fluid rounded-circle"
-                                    alt="pizarras blancas acrílicas">
-                                <h3>
-                                    <figcaption class="figure-caption text-center">Pizarras</figcaption>
-                                </h3>
-                            </figure>
-                        </a>
+                    <div class="col">
+                        <div class="card sec-categoria">
+                            <a href="./paginas/pizarras.html">
+                                <img src="./img/pizarraacrilica.png" class="w-100" alt="pizarras acrílicas">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-1">Pizarras</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
-
+        <hr class="hr hr-blurry" />
 
         <!-- -------Ofertas del mes --------->
-        <section class="ofertas-del-mes">
-            <h2 class="titulo">Ofertas del mes</h2>
-        </section>
-
-        <section class="container p-5">
-            <div class="row gx-5">
-
-                <div class="col-12 col-md-4 mb-5 mb-md-0">
-                    <div class="card">
+        <section class="container p-3">
+            <h2 class="titulo fs-2">Ofertas del mes</h2>
+            <div class="row mx-4 row-cols-1 row-cols-md-3 g-4">
+                <div class="col p-3">
+                    <div class="card tarjeta-producto">
                         <img src="./img/atrilmateriales.jpeg" class="w-100" alt="tela de lona">
                         <div class="card-body">
                             <h3 class="card-title">Pack atril de madera</h3>
@@ -226,18 +209,19 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h2 class="modal-title fs-5" id="exampleModalLabel">Producto agregado
-                                                    </h1>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
+                                                </h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 ¡Wooho, tu producto fue agregado al carrito de forma exitosa!
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
+                                                <button type="button" class="btn btn-secondary btn-modal-sc"
                                                     data-bs-dismiss="modal">Seguir comprando</button>
                                                 <a href="./paginas/contacto.html"> <button type="button"
-                                                        class="btn btn-primary">Ir al carro</button></a>
+                                                        class="btn btn-primary btn-modal-carrito">Ir al
+                                                        carro</button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -247,8 +231,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mb-5 mb-md-0">
-                    <div class="card">
+                <div class="col p-3">
+                    <div class="card tarjeta-producto">
                         <img src="./img/atrilespack.jpeg" class="w-100" alt="tela de lona">
                         <div class="card-body">
                             <h3 class="card-title">Atril de niño</h3>
@@ -258,14 +242,38 @@
                             <p class="card-text">Paleta mezcladora</p>
                             <h4 class="product-price mx-3 text-center">$ 7.990</h4>
                             <div class="d-grid gap-2 mx-auto">
-                                <button class="btn btn-primary me-md-2" type="button">Agregar al carro</button>
+                                <button class="btn btn-primary me-md-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Agregar al carro</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Producto agregado
+                                                </h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ¡Wooho, tu producto fue agregado al carrito de forma exitosa!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-modal-sc"
+                                                    data-bs-dismiss="modal">Seguir comprando</button>
+                                                <a href="./paginas/contacto.html"> <button type="button"
+                                                        class="btn btn-primary btn-modal-carrito">Ir al
+                                                        carro</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mb-5 mb-md-0">
-                    <div class="card">
+                <div class="col p-3">
+                    <div class="card tarjeta-producto">
                         <img src="./img/cajamateriales.jpeg" class="w-100" alt="pinceles">
                         <div class="card-body">
                             <h3 class="card-title">Set de arte</h3>
@@ -275,66 +283,159 @@
                             <p class="card-text">6 óleos 60ml</p>
                             <h4 class="product-price mx-3 text-center">$ 7.990</h4>
                             <div class="d-grid gap-2 mx-auto">
-                                <button class="btn btn-primary me-md-2" type="button">Agregar al carro</button>
+                                <button class="btn btn-primary me-md-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Agregar al carro</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Producto agregado
+                                                </h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ¡Wooho, tu producto fue agregado al carrito de forma exitosa!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-modal-sc"
+                                                    data-bs-dismiss="modal">Seguir comprando</button>
+                                                <a href="./paginas/contacto.html"> <button type="button"
+                                                        class="btn btn-primary btn-modal-carrito">Ir al
+                                                        carro</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
+            </div>
         </section>
         <!-- -------Lo más vendido --------->
-        <section class="lo-mas-vendido">
+        <div class="container p-3">
             <h2 class="titulo">Lo más vendido</h2>
-        </section>
-
-
-        <div class="container p-5">
-            <div class="row productos1 p-3">
-                <div class="ccol-12 col-md-4 mb-5 mb-md-0 p-3 productouno">
-                    <div class="card tarjeta-producto">
-                        <div class="product-1">
-                            <img src="./img/telalona.jpeg" class="w-100" alt="tela de lona">
-                            <div class="product-card-boy p-3">
-                                <h3 class="product-title">Tela lona</h3>
-                                <p class="product-text">Metro lineal (1,9 m²)</p>
-                                <p class="product-text">100% algodón lona grano medio</p>
-                                <h4 class="product-price mx-3 text-center">$ 8.990</h4>
-                                <div class="d-grid gap-2 mx-auto">
-                                    <button class="btn btn-primary me-md-2" type="button">Agregar al carro</button>
+            <div class="row mx-4 row-cols-1 row-cols-md-3 g-4">
+                <div class="col p-3">
+                    <div class="card h-100 tarjeta-producto">
+                        <img src="./img/acridalerr.jpeg" class="w-100" alt="pizarraatril">
+                        <div class="product-card-boy p-3">
+                            <h3 class="product-title fs-4 text-center">Acrílico Daler Rowney</h3>
+                            <p class="product-text">Consistencia suave y cremosa, son ideales para diferentes
+                                técnicas, desde el pincelado suave
+                                hasta el espatulado.</p>
+                            <p class="product-text">Colores de 120 ml. </p>
+                            <h4 class="product-price mx-3 text-center">$ 3.900</h4>
+                            <div class="d-grid gap-2 p-3 mx-auto">
+                                <button class="btn btn-primary me-md-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Agregar al carro</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Producto
+                                                    agregado
+                                                </h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ¡Wooho, tu producto fue agregado al carrito de forma exitosa!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-modal-sc"
+                                                    data-bs-dismiss="modal">Seguir comprando</button>
+                                                <a href="./paginas/contacto.html"> <button type="button"
+                                                        class="btn btn-primary btn-modal-carrito">Ir al
+                                                        carro</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mb-5 mb-md-0 p-3 productouno">
-                    <div class="card tarjeta-producto">
-                        <div class="product-1">
-                            <img src="./img/acrilicos2.jpeg" class="w-100" alt="tela de lona">
-                            <div class="product-card-boy p-3">
-                                <h3 class="product-title">Set acrílicos</h3>
-                                <p class="product-text">Marca Acrílex</p>
-                                <p class="product-text">Contiene 8 colores surtido de 20ml</p>
-                                <h4 class="product-price mx-3 text-center">$ 29.900</h4>
-                                <div class="d-grid gap-2 mx-auto">
-                                    <button class="btn btn-primary me-md-2" type="button">Agregar al carro</button>
+                <div class="col p-3">
+                    <div class="card h-100 tarjeta-producto">
+                        <img src="./img/telalona.jpeg" class="w-100" alt="tela de lona">
+                        <div class="product-card-boy p-3">
+                            <h3 class="product-title text-center">Tela lona</h3>
+                            <p class="product-text">Metro lineal (1,9 m²)</p>
+                            <p class="product-text">100% algodón lona grano medio</p>
+                            <p class="product-text">Imprimada blanca</p>
+                            <h4 class="product-price mx-3 text-center">$ 8.990</h4>
+                            <div class="d-grid gap-2 p-3 mx-auto">
+                                <button class="btn btn-primary me-md-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Agregar al carro</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Producto
+                                                    agregado
+                                                </h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ¡Wooho, tu producto fue agregado al carrito de forma exitosa!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-modal-sc"
+                                                    data-bs-dismiss="modal">Seguir comprando</button>
+                                                <a href="./paginas/contacto.html"> <button type="button"
+                                                        class="btn btn-primary btn-modal-carrito">Ir al
+                                                        carro</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mb-5 mb-md-0 p-3 productouno">
-                    <div class="card tarjeta-producto">
-                        <div class="product-1">
-                            <img src="./img/pincelesat.jpeg" class="w-100" alt="tela de lona">
-                            <div class="product-card-boy p-3">
-                                <h3 class="product-title">Pincel almendrado</h3>
-                                <p class="product-text">Set de 12 pinceles</p>
-                                <p class="product-text">Material de pelo sintético</p>
-                                <h4 class="product-price mx-3 text-center">$ 7.990</h4>
-                                <div class="d-grid gap-2 mx-auto">
-                                    <button class="btn btn-primary me-md-2" type="button">Agregar al carro</button>
+                <div class="col p-3">
+                    <div class="card h-100 tarjeta-producto">
+                        <img src="./img/caballeteartista.jpeg" class="w-100" alt="caballete de madera">
+                        <div class="product-card-boy p-3">
+                            <h3 class="product-title text-center">Caballete artista</h3>
+                            <p class="product-text">Su estructura robusta y resistente es ideal para sostener
+                                lienzos de gran tamaño, su altura y ángulo de inclinación
+                                ajustables permiten trabajar en diferentes y ángulos.</p>
+                                <h4 class="product-price mx-3 text-center">$ 119.900</h4>
+                            <div class="d-grid gap-2 p-3 mx-auto">
+                                <button class="btn btn-primary me-md-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Agregar al carro</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Producto
+                                                    agregado
+                                                </h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ¡Wooho, tu producto fue agregado al carrito de forma exitosa!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-modal-sc"
+                                                    data-bs-dismiss="modal">Seguir comprando</button>
+                                                <a href="./paginas/contacto.html"> <button type="button"
+                                                        class="btn btn-primary btn-modal-carrito">Ir al
+                                                        carro</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -342,10 +443,6 @@
                 </div>
             </div>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
-            class="sticky-ws" target="_blank">
-            <i class="fa fa-whatsapp ws-icon"></i>
-        </a>
     </main>
 
 

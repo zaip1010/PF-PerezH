@@ -17,18 +17,26 @@
     border-radius: 10px;
 }
 
-.contacto h2 {
+.contacto-text h2 {
     color: #FF731D;
     font-weight: bolder;
+
+    & img {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+    }
+    
+    & a {
+        color: #FF731D;
+        font-weight: bolder;
+    }
 }
 
-.contacto-text img {
-    width: 500px;
-    height: 350px;
-    object-fit: cover;
-}
-
-.contacto-text a {
+.sucursales h2 {
     color: #FF731D;
-    font-weight: bolder;
+}
+
+.sucursales h3 {
+    color: #2158b8;
 }
