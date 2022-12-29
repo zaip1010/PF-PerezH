@@ -6,18 +6,32 @@
     border-color: #454545;
 }
 
+.seccion-categorias {
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(218,227,241,0.927608543417367) 46%, rgba(255,255,255,1) 84%);
+}
+
+.ofertas {
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(183,211,255,0.21332282913165268) 46%, rgba(255,255,255,1) 98%);
+}
+
+.mas-vendido {
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(183,211,255,0.21332282913165268) 46%, rgba(255,255,255,1) 98%);
+}
+
 .categorias .titulo {
+    font-family: 'Rubik', sans-serif;
     color: #2158b8;
-}
-
-.container {
-    background-color: #ffffff;
-}
-
-.categ:hover {
-    transform: scale(1.1, 1.1)
 }
 
 .titulo {
+    font-family: 'Rubik', sans-serif;
     color: #2158b8;
+}
+
+.marcas {
+    font-family: 'Rubik', sans-serif;
+    color: #FF731D;
 }

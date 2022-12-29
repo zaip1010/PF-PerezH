@@ -1,5 +1,8 @@
 form {
-    background-color: #62687112;
+    border: 3px;
+    background: rgb(194,194,194);
+background: linear-gradient(90deg, rgba(194,194,194,0.20211834733893552) 0%, rgba(212,212,212,0.10968137254901966) 50%, rgba(254,254,255,0.14049369747899154) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .form-control {
     border: 3px double rgba(255, 115, 29, 0.26);

@@ -1,20 +1,43 @@
 .sec-categoria {
-    border: 0px solid #e41b1b02;
-    border-radius: 100%;
-    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    border: 0px solid #ffffff02;
+    border-radius: 1%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+
+    &:hover {
+        animation: pulse 1s ease 0s 1 normal forwards;
+    }
+
+    @keyframes pulse {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.2;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    & h3 {
+        color: #FF731D;
+    }
+}
+
+
+.sec-categoria img {
+    border-radius: 1%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
 
 .card-title {
     color: #FF731D;
     font-weight: bolder;
-}
-
-.sec-categoria img{
-    border: 1px solid #e41b1b02;
-    border-radius: 100%;
-    width: 450px;
-    height: 350px;
-    object-fit: cover;
 }
 
 .tarjeta-producto {
@@ -26,18 +49,13 @@
         transform: translate(7px, -1px);
     }
 
+    & h3 {
+        color: #FF731D;
+    }
+
     & img {
         width: 250px;
         height: 250px;
-        object-fit: fill;
+        object-fit: contain;
     }
-}
-
-.breadcrumb {
-    background-color: #1c4c9f;
-    padding: 20px;
-
-    & a {
-        color: #FF731D;
-     }
 }
