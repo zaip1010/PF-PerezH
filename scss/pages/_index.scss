@@ -21,14 +21,46 @@
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 2%, rgba(183, 211, 255, 0.21332282913165268) 46%, rgba(255, 255, 255, 1) 98%);
 }
 
-.categorias .titulo {
-    font-family: 'Rubik', sans-serif;
-    color: #2158b8;
-}
-
 .titulo {
     font-family: 'Rubik', sans-serif;
-    color: #2158b8;
+    color: #2142b8;
+}
+
+.titulo-index {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: #2142b8;
+    top: 50%;
+    left: 50%;
+    background-image: linear-gradient(rgb(255, 170, 0), rgb(255, 157, 0));
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+     transition: background-size .7s, background-position .5s ease-in-out;
+     text-shadow: -5px 5px 0px #73add7c1, 2px 2px 2px rgba(206,89,55,0);
+    
+    &:hover {
+        background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+        }
+}
+
+.delineado {
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(gold, gold);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+
+&:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
 }
 
 .marcas {
